@@ -1,0 +1,24 @@
+name:                hufte
+version:             0.1.0.0
+description:         Hufte is a sparklines library.
+homepage:            https://github.com/msrdic/hufte#readme
+license:             MIT
+license-file:        LICENSE
+author:              Mladen Srdić
+maintainer:          m.s.qubits@gmail.com
+copyright:           2018 Mladen Srdić
+category:            Graphics
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Hufte
+  build-depends:       base >= 4.7 && < 5,
+                       gd >= 3000.7.3
+  default-language:    Haskell2010
+
+source-repository head
+  type:     git
+  location: https://github.com/msrdic/hufte
