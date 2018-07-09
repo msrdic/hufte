@@ -20,3 +20,8 @@ cabal.project.local
 cabal.project.local~
 .HTF/
 .ghc.environment.*
+
+TestIgnored.hs
+assets
+assets/index.html
+WebTest.hs
