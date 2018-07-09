@@ -22,6 +22,3 @@ cabal.project.local~
 .ghc.environment.*
 
 TestIgnored.hs
-assets
-assets/index.html
-WebTest.hs
