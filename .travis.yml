@@ -23,7 +23,7 @@ cache:
 addons:
   apt:
     packages:
-      - libgmp-dev
+      - libgd2-xpm-dev
 
 before_install:
 # Download and unpack the stack executable
