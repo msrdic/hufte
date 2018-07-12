@@ -1,6 +1,9 @@
 {-# LANGUAGE OverloadedStrings #-}
 
-module Hufte (barSparkline, defaultConf, height) where
+module Hufte ( lineGraph
+             , defaultConf
+             , SparklineConf ( .. )
+             ) where
 
 import           Codec.Binary.Base64 (encode)
 import           Data.ByteString     (unpack)
@@ -49,8 +52,8 @@ defaultConf = SparklineConf { width = 120
                             , markCurr = True
                             }
 
-barSparkline :: SparklineConf -> Values -> IO String
-barSparkline conf vs = do
+lineGraph :: SparklineConf -> Values -> IO String
+lineGraph conf vs = do
   let nPoints  = length vs
       w        = width conf
       h        = height conf

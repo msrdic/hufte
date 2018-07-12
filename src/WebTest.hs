@@ -31,7 +31,7 @@ randomSparkline :: Int -> IO String
 randomSparkline pn = do
   gen <- newStdGen
   let randomVals = take pn $ randomRs (0, height defaultConf) gen
-  liftIO $ barSparkline defaultConf randomVals
+  liftIO $ lineGraph defaultConf randomVals
 
 randomSparklines :: Int -> Int -> IO [String]
 randomSparklines gn pn = replicateM gn $ randomSparkline pn
